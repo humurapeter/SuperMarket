@@ -6,22 +6,28 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 public class MainActivity extends AppCompatActivity {
-Button b;
+
+    Button myb;
+
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        //HUMURANKWINE PETER
-        //2017/BIT/083/PS
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        b=findViewById(R.id.button1);
-        b.setOnClickListener(new View.OnClickListener() {
+
+
+        myb=findViewById(R.id.button1);
+        myb.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent myintent =new Intent(MainActivity.this,superf.class);
                 startActivity(myintent);
             }
         });
-
     }
 
 }
+
+
+

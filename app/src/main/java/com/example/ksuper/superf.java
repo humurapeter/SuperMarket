@@ -33,10 +33,22 @@ public class superf extends AppCompatActivity {
                 Intent h1 = new Intent(superf.this, supert.class);
                 startActivity(h1);
                 break;
+
             case R.id.itemthree:
+                Intent h3= new Intent(superf.this,explore.class);
+                startActivity(h3);
+                break;
+            case R.id.view:
                 Intent h2= new Intent(superf.this,MainActivity.class);
                 startActivity(h2);
                 break;
+
+            case R.id.frag:
+                Intent h4= new Intent(superf.this,fragment_supermarket.class);
+                startActivity(h4);
+                break;
+
+
 
 
             default:

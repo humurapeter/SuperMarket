@@ -11,4 +11,10 @@
     <item
         android:id="@+id/itemthree"
         android:title="start" />
+    <item
+        android:id="@+id/view"
+        android:title="VIEW" />
+    <item
+        android:id="@+id/frag"
+        android:title="inventory" />
 </menu>
