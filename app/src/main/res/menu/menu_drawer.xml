@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item
+    android:id="@+id/home"
+    android:title="home"
+    android:icon="@drawable/ic_home_black_24dp"
+
+    />
+    <item
+        android:id="@+id/image"
+        android:title="image"
+        android:icon="@drawable/ic_image_black_24dp"/>
+
+    <item
+        android:id="@+id/emoticon"
+        android:title="emogi"
+        android:icon="@drawable/ic_insert_emoticon_black_24dp"/>
+
+</menu>
