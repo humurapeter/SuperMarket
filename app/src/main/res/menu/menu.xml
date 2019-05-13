@@ -7,7 +7,7 @@
         android:title="home" />
     <item
         android:id="@+id/itemtwo"
-        android:title="display" />
+        android:title="items" />
     <item
         android:id="@+id/itemthree"
         android:title="start" />
@@ -17,4 +17,7 @@
     <item
         android:id="@+id/frag"
         android:title="inventory" />
+    <item
+        android:id="@+id/reg"
+        android:title="register_client" />
 </menu>

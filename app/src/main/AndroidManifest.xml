@@ -3,15 +3,28 @@
     package="com.example.ksuper">
 
     <application
+        android:name=".App"
         android:allowBackup="true"
         android:icon="@drawable/imagez"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".explore"></activity>
-        <activity android:name=".superf" />
-        <activity android:name=".supert" />
+        <activity android:name=".db"
+            android:parentActivityName=".superf"
+            ></activity>
+        <activity android:name=".Notify"
+            android:parentActivityName=".superf"
+            />
+        <activity android:name=".navigation"
+            android:parentActivityName=".superf"/>
+        <activity android:name=".explore"
+            android:parentActivityName=".superf"/>
+        <activity android:name=".superf"
+            />
+        <activity
+            android:name=".supert"
+            android:parentActivityName=".superf" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

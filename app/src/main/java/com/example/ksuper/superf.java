@@ -5,14 +5,28 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
-
+import android.view.View;
+import android.widget.Button;
+//HUMURANKWINE PETER
+//2017/BIT/083/PS
 
 public class superf extends AppCompatActivity {
+Button Navg;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_superf);
+        Navg=findViewById(R.id.navg);
+        Navg.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent myintent= new Intent(superf.this, navigation.class);
+                startActivity(myintent);}
+
+
+
+        });
     }
     @Override
     public boolean onCreateOptionsMenu (Menu menu){
@@ -42,10 +56,14 @@ public class superf extends AppCompatActivity {
                 Intent h2= new Intent(superf.this,MainActivity.class);
                 startActivity(h2);
                 break;
-
             case R.id.frag:
-                Intent h4= new Intent(superf.this,fragment_supermarket.class);
+                Intent h4= new Intent(superf.this,Notify.class);
                 startActivity(h4);
+                break;
+
+            case R.id.reg:
+                Intent h5= new Intent(superf.this,db.class);
+                startActivity(h5);
                 break;
 
 
