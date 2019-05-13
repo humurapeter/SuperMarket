@@ -12,6 +12,7 @@ import android.widget.Button;
 
 public class superf extends AppCompatActivity {
 Button Navg;
+Button ee;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
